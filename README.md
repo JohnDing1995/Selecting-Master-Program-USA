@@ -3,7 +3,7 @@
 ## ZH
 
 - 基于Flask的Webapp
-- 基于https://github.com/JohnDing1995/Master-Application-Helper爬到的数据
+- 基于https://github.com/JohnDing1995/Master-Application-Helper 爬到的数据
 - 能进行录取信息的查询
 
 
