@@ -15,8 +15,9 @@ def query_university():
         school_name = request.form['name']
         major = request.form['major']
         result = all_data.find({'admission_school': school_name, 'major': major})
-        for ad in result:
-            pprint.pprint(ad)
+        #for ad in result:
+        #    pprint.pprint(ad)
+        #for test only
     return render_template('main.html')
 
 
