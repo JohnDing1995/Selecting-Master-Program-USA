@@ -46,43 +46,18 @@
         </div><!--/.nav-collapse -->
       </div>
     </nav>
-        {% from "_formhelpers.html" import render_field %}
-      <form class="form-horizontal" method=post action="/query_university">
-    <fieldset>
-      <div id="legend" class="">
-        <legend class="">表单名</legend>
-      </div>
-
-
-
-
-    <div class="control-group">
-
-          <!-- Text input-->
-          <div class="controls">
-                     {{ render_field(form.school_name) }}
+    <br><br><br><br>
+      <form class="col-xs-12 col-sm-6 col-md-6 col-md-offset-3 col-sm-offset-3">
+          <div class="form-group">
+            <label for="name">University Name</label>
+            <input type="text" class="form-control" id="name" placeholder="University Name">
           </div>
-        </div>
-
-    <div class="control-group">
-
-          <!-- Text input-->
-          <div class="controls">
-                       {{ render_field(form.apply_major) }}
-            <p class="help-block">Supporting help text</p>
+          <div class="form-group">
+            <label for="major">Major</label>
+            <input type="text" class="form-control" id="major" placeholder="Major">
           </div>
-        </div>
-
-    <div class="control-group">
-          <!-- Button -->
-          <div class="controls">
-            <button class="btn btn-success" type=submit value=Search>Search</button>
-          </div>
-        </div>
-
-    </fieldset>
-  </form>
-
+          <button type="submit" class="btn btn-success">Search</button>
+      </form>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
