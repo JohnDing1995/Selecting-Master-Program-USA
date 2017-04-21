@@ -58,6 +58,19 @@
           </div>
           <button type="submit" value="search" class="btn btn-success">Search</button>
       </form>
+    <ul class="col-xs-12 col-sm-6 col-md-6 col-md-offset-3 col-sm-offset-3">
+    {% if query_result == "" %}
+        <li><em>Please enter The UNIVERSITY'S NAME and Major you want to apply</em></li>
+    {% else %}
+        {% if query_result == null %}
+            <li><em>No Result, Check Your Input</em></li>
+        {% else %}
+            {% for ad in query_result %}
+                <li><h2>{{ ad }}</h2>
+            {% endfor %}
+        {% endif %}
+    {% endif %}
+  </ul>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
