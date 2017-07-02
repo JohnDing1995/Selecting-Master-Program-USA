@@ -62,9 +62,44 @@
     {% if query_result == "" %}
         <li><em>Please enter The UNIVERSITY'S NAME and Major you want to apply</em></li>
     {% else %}
+        <table class="table" contenteditable="true">
+        <thead>
+            <tr>
+                <th>学校</th>
+                <th>状态</th>
+                <th>GPA</th>
+                <th>语言成绩</th>
+                <th>GRE</th>
+                <th>本科学校</th>
+                <th>本科专业</th>
+                <th>录取年度</th>
+                <th>链接</th>
+            </tr>
+	    </thead>
+        <tbody>
+            {% for ad in query_result %}
+                <tr>
+                    <td>{{ ad['admission_school'] }}</td>
+                    <td></td>
+                    <td>{{ ad['gpa'] }}</td>
+                    <td>{{ ad['undergrad_school'] }}</td>
+                    <td>{{ ad['gpa'] }}</td>
+
+                    <td>{{ ad['major'] }}</td>
+                    <td>{{ ad['gre'] }}</td>
+
+                    <td>{{ ad['year'] }}</td>
+                    <td>{{ ad['link'] }}</td>
+		        </tr>
+            {% endfor %}
+        </tbody>
             {% for ad in query_result %}
                 <li><h2>{{ ad }}</h2>
             {% endfor %}
+
+
+</table>
+
     {% endif %}
   </ul>
 
