@@ -16,9 +16,7 @@
 
 # Prototype of website
  Still NAÏVE..
- 
-![2.png](https://ooo.0o0.ooo/2017/07/03/5959a3473679b.png)
-![1.png](https://ooo.0o0.ooo/2017/07/03/5959a347637fa.png)
+![1.png](https://ooo.0o0.ooo/2017/07/03/5959b76f58d84.png)
 ## Update Log
 
 - 4/19/2017 Finish the basic interface, the query function still in process

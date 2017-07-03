@@ -81,7 +81,7 @@
                 <tr>
                     <td>{{ ad['admission_school'] }}</td>
                     <td>{{ ad['status'] }}</td>
-                    <td>{{ ad['gpa'] }}</td>
+                    <td>{{ ad['gpa'].replace("(","").replace(")","") }}</td>
                     <td>{{ ad['english_grade'] }}</td>
                     <td>{{ ad['gre'] }}</td>
 
