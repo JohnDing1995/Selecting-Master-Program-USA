@@ -15,8 +15,9 @@
 - User can query admission information in this small web app
 
 # Prototype of website
- Still NAÏVE..
-![1.png](https://ooo.0o0.ooo/2017/07/03/5959b76f58d84.png)
+
+Much better now..
+![1.png](https://ooo.0o0.ooo/2017/07/05/595bc4e236ef5.png)
 ## Update Log
 
 - 4/19/2017 Finish the basic interface, the query function still in process
