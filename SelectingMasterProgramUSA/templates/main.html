@@ -24,11 +24,22 @@
       <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+      <style>
+          footer{
+ clear: both;
+    display: block;
+    text-align: left;
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+              height: 200px;
+          }
+      </style>
   </head>
 
   <body>
 
-    <nav class="navbar navbar-inverse navbar-fixed-top">
+    <nav class="navbar-default navbar-fixed-top">
 
       <div class="container">
         <div class="navbar-header" >
@@ -50,7 +61,7 @@
       </div>
     </nav>
 
-    <div class = "jumbotron" style="width: 100%; background-color: #5e5e5e;background-size:cover;  height: 500px;margin-bottom: 0px">
+    <div class = "jumbotron" style="width: 100%; background-image:url(http://blogcache2.artron.net/201302/26/748991_13618571379clc.jpg); background-size: cover; background-attachment: fixed;  height: 600px;margin-bottom: 0px;">
         <div class="container">
     <div class="row">
         <div class="col-md-12"></div>
@@ -96,7 +107,56 @@
           </div>
           <button type="submit" value="search" class="btn btn-success">Search</button>
       </form>#}
-    <ul class="col-xs-12 col-sm-6 col-md-6 col-md-offset-3 col-sm-offset-3">
+        {% if query_result!="" %}
+        <div class="alert alert-info center" role="alert">以下是{{ school_name_and_major }}的申请结果与申请人背景</div>
+
+    {% endif %}
+    <div class="list-group">
+                    {% for ad in query_result %}
+      <a href="{{ ad['link']}}" class="list-group-item">
+        <h4 class="list-group-item-heading">{{ ad['title'] }}</h4>
+        <p class="list-group-item-text">
+             {{ ad['year'] }} {{ ad['status'] }} from {{  ad['admission_school'] }} <br class = "basic-background">
+                        GPA:{{ ad['gpa'].replace("(","").replace(")","") }}  IELTS／TOEFL：{{ ad['english_grade'] }} GRE{{ ad['gre'] }} <br class = "school-background">
+                        {{ ad['major'] }}@{{ ad['undergrad_school'] }}
+        </p>
+      </a>
+        {% endfor %}
+</div>
+<footer class="footer" style="background-color:whitesmoke">
+    <div class="footer-div">
+
+         <h2 class="footer-header">About</h2>
+    <ul>
+  <li> Author:DING RUIYANG</li>
+  <li>  Data from <a href="http://www.1point3acres.com/bbs/">一亩三分地论坛
+   </a></li>
+</ul>
+    </div>
+
+
+
+</footer>
+   {# <div style="height: inherit" class="col-xs-12 col-sm-6 col-md-6 col-md-offset-3 col-sm-offset-3 search-result">
+
+        <table style="background-color: rgb(255,255,255);border-collapse: collapse;table-layout: fixed">
+            <tbody>
+            {% for ad in query_result %}
+                <tr style="border-bottom: 1px solid rgb(224, 224, 224); color: rgb(0, 0, 0); height: 48px;">
+                    <td style="padding-left: 24px; padding-right: 24px; height: 48px; text-align: left; font-size: 13px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; background-color: inherit;">
+                        <a href="{{ ad['link'] }}" target="_blank">{{ ad['title'] }}</a>
+                            <br class="result-detail">
+                                {{ ad['year'] }} {{ ad['status'] }} from {{  ad['admission_school'] }} <br class = "basic-background">
+                        GPA:{{ ad['gpa'].replace("(","").replace(")","") }}  IELTS／TOEFL：{{ ad['english_grade'] }} GRE{{ ad['gre'] }} <br class = "school-background">
+                        {{ ad['major'] }}@{{ ad['undergrad_school'] }}
+
+                    </td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>#}
+    {#<ul class="col-xs-12 col-sm-6 col-md-6 col-md-offset-3 col-sm-offset-3">
     {% if query_result == "" %}
         <li><em>Please enter The UNIVERSITY'S NAME and Major you want to apply</em></li>
     {% else %}
@@ -139,7 +199,7 @@
 </table>
 
     {% endif %}
-  </ul>
+  </ul>#}
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
@@ -149,5 +209,6 @@
     <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+
   </body>
 </html>

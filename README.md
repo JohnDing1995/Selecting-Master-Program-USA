@@ -14,10 +14,10 @@
 - Data source : Admission data obtained through the spider in https://github.com/JohnDing1995/Master-Application-Helper
 - User can query admission information in this small web app
 
-# Prototype of website
+# Preview of website
+![2.jpg](https://ooo.0o0.ooo/2017/07/05/595c6707533ff.jpg)
+![1.jpg](https://ooo.0o0.ooo/2017/07/05/595c6680dc391.jpg)
 
-Much better now..
-![1.png](https://ooo.0o0.ooo/2017/07/05/595bc4e236ef5.png)
 ## Update Log
 
 - 4/19/2017 Finish the basic interface, the query function still in process

@@ -9,6 +9,7 @@ from pymongo import MongoClient
 
 @app.route('/', methods=['POST', 'GET'])
 def query_university():
+    school_name_and_major = " "
     query_result = ""
     if request.method == "POST":
         # client = MongoClient('localhost', 27017)
@@ -29,5 +30,5 @@ def query_university():
 
 
         # for test only
-    return render_template('main.html', query_result =query_result)
+    return render_template('main.html', query_result =query_result, school_name_and_major = school_name_and_major)
 
