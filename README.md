@@ -22,3 +22,4 @@
 
 - 4/19/2017 Finish the basic interface, the query function still in process
 - 4/20/2017 Query function is available, the display function now in progress
+- 7/04/2017 Finish the main function,TODO:add pagination
