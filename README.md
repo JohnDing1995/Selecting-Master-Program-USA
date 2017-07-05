@@ -16,7 +16,7 @@
 
 # Preview of website
 ![2.jpg](https://ooo.0o0.ooo/2017/07/05/595c6707533ff.jpg)
-![1.jpg](https://ooo.0o0.ooo/2017/07/05/595c6680dc391.jpg)
+
 
 ## Update Log
 
