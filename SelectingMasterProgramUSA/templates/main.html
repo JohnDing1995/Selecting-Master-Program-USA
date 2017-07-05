@@ -111,7 +111,7 @@
         <div class="alert alert-info center" role="alert">以下是{{ school_name_and_major }}的申请结果与申请人背景</div>
 
     {% endif %}
-    <div class="list-group">
+    <div class="list-group col-sm-12 col-md-8 col-md-offset-2">
                     {% for ad in query_result %}
       <a href="{{ ad['link']}}" class="list-group-item">
         <h4 class="list-group-item-heading">{{ ad['title'] }}</h4>
