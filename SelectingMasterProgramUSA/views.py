@@ -15,9 +15,7 @@ def query_university():
         client = MongoClient('localhost', 27017)
         db = client.settings
         all_data = db['MONGODB_DBNAME.Admissions']
-
         school_name_and_major = request.form['name_major']
-        print(school_name_and_major)
         school_name = school_name_and_major.split(' ')[0]
         major = school_name_and_major.split(' ')[1]
         school_name_re = ".*" + school_name + ".*"
