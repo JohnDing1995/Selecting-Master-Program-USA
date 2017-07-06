@@ -37,10 +37,10 @@
       <file leaf-file-name="main.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/SelectingMasterProgramUSA/templates/main.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="441">
-              <caret line="154" column="43" lean-forward="false" selection-start-line="154" selection-start-column="43" selection-end-line="154" selection-end-column="43" />
+            <state relative-caret-position="395">
+              <caret line="159" column="40" lean-forward="false" selection-start-line="159" selection-start-column="40" selection-end-line="159" selection-end-column="40" />
               <folding>
-                <marker date="1499356880000" expanded="false" signature="7623:7703" ph="..." />
+                <marker date="1499356971000" expanded="false" signature="7627:7707" ph="..." />
               </folding>
             </state>
           </provider>
@@ -683,7 +683,14 @@
       <option name="project" value="LOCAL" />
       <updated>1499355704790</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="change layout in mobile devices">
+      <created>1499356910475</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1499356910475</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -731,7 +738,8 @@
     <MESSAGE value="deploy on qcloud" />
     <MESSAGE value="uodate ui" />
     <MESSAGE value="fix typo" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix typo" />
+    <MESSAGE value="change layout in mobile devices" />
+    <option name="LAST_COMMIT_MESSAGE" value="change layout in mobile devices" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -790,7 +798,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1499356880000" expanded="false" signature="7623:7703" ph="..." />
+            <marker date="1499356971000" expanded="false" signature="7627:7707" ph="..." />
           </folding>
         </state>
       </provider>
@@ -836,7 +844,7 @@
         <state relative-caret-position="615">
           <caret line="41" column="29" lean-forward="false" selection-start-line="41" selection-start-column="29" selection-end-line="41" selection-end-column="29" />
           <folding>
-            <marker date="1499356880000" expanded="false" signature="7623:7703" ph="..." />
+            <marker date="1499356971000" expanded="false" signature="7627:7707" ph="..." />
           </folding>
         </state>
       </provider>
@@ -882,7 +890,7 @@
         <state relative-caret-position="735">
           <caret line="49" column="27" lean-forward="true" selection-start-line="49" selection-start-column="27" selection-end-line="49" selection-end-column="27" />
           <folding>
-            <marker date="1499356880000" expanded="false" signature="7623:7703" ph="..." />
+            <marker date="1499356971000" expanded="false" signature="7627:7707" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1158,10 +1166,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/SelectingMasterProgramUSA/templates/main.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="154" column="43" lean-forward="false" selection-start-line="154" selection-start-column="43" selection-end-line="154" selection-end-column="43" />
+        <state relative-caret-position="395">
+          <caret line="159" column="40" lean-forward="false" selection-start-line="159" selection-start-column="40" selection-end-line="159" selection-end-column="40" />
           <folding>
-            <marker date="1499356880000" expanded="false" signature="7623:7703" ph="..." />
+            <marker date="1499356971000" expanded="false" signature="7627:7707" ph="..." />
           </folding>
         </state>
       </provider>
