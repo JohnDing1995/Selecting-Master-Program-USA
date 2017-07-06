@@ -17,7 +17,7 @@
 # Preview of website
 You can see the live preview of this website at
 http://123.206.99.164
-![2.jpg](https://ooo.0o0.ooo/2017/07/05/595c6707533ff.jpg)
+
 
 
 ## Update Log
