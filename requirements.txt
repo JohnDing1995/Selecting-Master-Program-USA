@@ -50,10 +50,8 @@ pyOpenSSL==16.2.0
 python-dateutil==2.6.0
 python-editor==1.0.3
 pytz==2016.10
-query-string==0.0.0
 queuelib==1.4.2
 readline==6.2.4.1
-request==0.0.0
 requests==2.14.2
 required==0.2.2
 scrapely==0.13.3
