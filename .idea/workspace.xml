@@ -37,10 +37,10 @@
       <file leaf-file-name="main.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/SelectingMasterProgramUSA/templates/main.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="151" column="21" lean-forward="false" selection-start-line="151" selection-start-column="21" selection-end-line="151" selection-end-column="21" />
+            <state relative-caret-position="225">
+              <caret line="15" column="36" lean-forward="false" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
               <folding>
-                <marker date="1499357164000" expanded="false" signature="7631:7711" ph="..." />
+                <marker date="1499387710000" expanded="false" signature="8020:8100" ph="..." />
               </folding>
             </state>
           </provider>
@@ -697,7 +697,14 @@
       <option name="project" value="LOCAL" />
       <updated>1499356973948</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="change layout in mobile devices">
+      <created>1499357167777</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1499357167777</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -805,7 +812,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1499357164000" expanded="false" signature="7631:7711" ph="..." />
+            <marker date="1499387710000" expanded="false" signature="8020:8100" ph="..." />
           </folding>
         </state>
       </provider>
@@ -851,7 +858,7 @@
         <state relative-caret-position="615">
           <caret line="41" column="29" lean-forward="false" selection-start-line="41" selection-start-column="29" selection-end-line="41" selection-end-column="29" />
           <folding>
-            <marker date="1499357164000" expanded="false" signature="7631:7711" ph="..." />
+            <marker date="1499387710000" expanded="false" signature="8020:8100" ph="..." />
           </folding>
         </state>
       </provider>
@@ -897,7 +904,7 @@
         <state relative-caret-position="735">
           <caret line="49" column="27" lean-forward="true" selection-start-line="49" selection-start-column="27" selection-end-line="49" selection-end-column="27" />
           <folding>
-            <marker date="1499357164000" expanded="false" signature="7631:7711" ph="..." />
+            <marker date="1499387710000" expanded="false" signature="8020:8100" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1173,10 +1180,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/SelectingMasterProgramUSA/templates/main.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="151" column="21" lean-forward="false" selection-start-line="151" selection-start-column="21" selection-end-line="151" selection-end-column="21" />
+        <state relative-caret-position="225">
+          <caret line="15" column="36" lean-forward="false" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
           <folding>
-            <marker date="1499357164000" expanded="false" signature="7631:7711" ph="..." />
+            <marker date="1499387710000" expanded="false" signature="8020:8100" ph="..." />
           </folding>
         </state>
       </provider>

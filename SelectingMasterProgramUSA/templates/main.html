@@ -13,7 +13,7 @@
 <script src="https://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
       <script src="https://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
       <link href="https://okl6kq9ce.qnssl.com/main.ba765793.css" rel="stylesheet">
-    <title>Starter Template for Bootstrap</title>
+    <title>Master Application Helper</title>
 
     <!-- Bootstrap core CSS -->
     <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
@@ -26,14 +26,14 @@
     <![endif]-->
       <style>
           footer{
- clear: both;
-        display: block;
-        text-align: left;
-        position: relative;
-        bottom: 0px;
-        width: 100%;
-              font-family:Helvetica, Arial, sans-serif;
-              height: 200px;
+            clear: both;
+            display: block;
+            text-align: left;
+            position: relative;
+            bottom: 0px;
+            width: 100%;
+            font-family:Helvetica, Arial, sans-serif;
+            height: 200px;
           }
       </style>
   </head>
@@ -63,39 +63,32 @@
     </nav>
 
     <div class = "jumbotron" style="width: 100%; background-image:url(http://blogcache2.artron.net/201302/26/748991_13618571379clc.jpg); background-size: cover; background-attachment: fixed;  height: 750px;margin-bottom: 0px;">
-
         <div class="container">
-    <div class="row">
-        <div class="col-md-12"></div>
-
-<div class="col-xs-12 col-sm-6 col-md-6 col-md-offset-3 col-sm-offset-3" style="padding-left: 40px;padding-right: 40px;box-shadow: azure">
-        <form method="post">
-    <div style="margin: 250px auto 0px">
-<div class="search-input-div" id="search">
-    <div style="display: inline-block; position: relative; width: 100%;">
-    <div class="search-input" style="font-size: 16px; line-height: 24px; width: 100%; height: 48px; display: inline-block;
+            <div class="row">
+                <div class="col-md-12"></div>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-md-offset-3 col-sm-offset-3" style="padding-left: 40px;padding-right: 40px;box-shadow: azure">
+                    <form method="post">
+                        <div style="margin: 250px auto 0px">
+                         <div class="search-input-div" id="search">
+                            <div style="display: inline-block; position: relative; width: 100%;">
+                                <div class="search-input" style="font-size: 16px; line-height: 24px; width: 100%; height: 48px; display: inline-block;
     position: relative; background-color: transparent; font-family:Helvetica, Arial, sans-serif; transition: height 200ms
     cubic-bezier(.17,.67,.83,.67) 0ms; cursor: auto;">
-
-
-            <input name="name_major" type="text" autocomplete="off" value="" id="AutoComplete" style="padding: 0px; position: relative; width: 100%;
+                                    <input name="name_major" type="text" autocomplete="off" value="" id="AutoComplete" style="padding: 0px; position: relative; width: 100%;
          border: none; outline: none; background-color: rgba(0, 0, 0, 0); color: rgba(0, 0, 0, 0.87); cursor: inherit; font-style: inherit;
          font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: x-large; line-height: inherit; font-family: inherit;
           -webkit-tap-highlight-color: rgba(0, 0, 0, 0);margin-bottom: 100px;margin-top: 0px; height: 100%;" placeholder="学校+专业，空格分隔，如CMU CS">
-
-
-    </div>
-    </div>
-    <span class="search-btn-span">
-        <input type="submit" class="search-btn" value="搜索">
-    </span>
-</div>
-</div>
+                                </div>
+                            </div>
+                            <span class="search-btn-span">
+                                <input type="submit" class="search-btn" value="搜索">
+                            </span>
+                            </div>
+                        </div>
                    </form>
-
-    </div>
-    </div>
-    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
       {#<form class="col-xs-12 col-sm-6 col-md-6 col-md-offset-3 col-sm-offset-3" method="post">
@@ -109,25 +102,23 @@
           </div>
           <button type="submit" value="search" class="btn btn-success">Search</button>
       </form>#}
-        {% if query_result!="" %}
+    {% if query_result!="" %}
         <div class="alert alert-info center" role="alert">以下是{{ school_name_and_major }}的申请结果与申请人背景</div>
-
     {% endif %}
     <div class="list-group col-sm-12 col-md-8 col-md-offset-2">
-                    {% for ad in query_result %}
-      <a href="{{ ad['link']}}" class="list-group-item">
-        <h4 class="list-group-item-heading">{{ ad['title'] }}</h4>
-        <p class="list-group-item-text">
-             {{ ad['year'] }} {{ ad['status'] }} from {{  ad['admission_school'] }} <br class = "basic-background">
-                        GPA:{{ ad['gpa'].replace("(","").replace(")","") }}  IELTS／TOEFL：{{ ad['english_grade'] }} GRE{{ ad['gre'] }} <br class = "school-background">
-                        {{ ad['major'] }}@{{ ad['undergrad_school'] }}
-        </p>
-      </a>
+        {% for ad in query_result %}
+            <a href="{{ ad['link']}}" class="list-group-item">
+                <h4 class="list-group-item-heading">{{ ad['title'] }}</h4>
+                <p class="list-group-item-text">
+                    {{ ad['year'] }} {{ ad['status'] }} from {{  ad['admission_school'] }} <br class = "basic-background">
+                    GPA:{{ ad['gpa'].replace("(","").replace(")","") }}  IELTS／TOEFL：{{ ad['english_grade'] }} GRE{{ ad['gre'] }} <br class = "school-background">
+                    {{ ad['major'] }}@{{ ad['undergrad_school'] }}
+                </p>
+            </a>
         {% endfor %}
 </div>
-<div class="footer" style="background-color:transparent">
+<footer>
     <div class="footer-div col-xs-12 col-lg-3">
-
          <h3 class="footer-header">How can I use this website?</h3>
         <ul>
             <il>
@@ -136,35 +127,26 @@
             <li>
                 i.e.:If you want to study computer science at New York University,just type "NYU CS",and press Enter
             </li>
-
         </ul>
     </div>
         <div class="footer-div  col-xs-12 col-lg-3">
-                 <h3 class="footer-header">Where did the data came from?</h3>
-        <ul>
-            <li>All data came from <a href="http://www.1point3acres.com/bbs/">一亩三分地论坛</a> via net spider, all right reserved by 1point3acres.com.</li>
-            <li>The data should not be used for commercial propose</li>
-        </ul>
+            <h3 class="footer-header">Where did the data came from?</h3>
+                <ul>
+                    <li>All data came from <a href="http://www.1point3acres.com/bbs/">一亩三分地论坛</a> via net spider, all right reserved by 1point3acres.com.</li>
+                    <li>The data should not be used for commercial propose</li>
+                </ul>
         </div>
         <div class="footer-div  col-xs-12 col-lg-3">
-         <h3 class="footer-header">What the background pic is?</h3>
-        <ul>
-            Scuola di Atene(The School of Athens),if you have listened Guns N' Roses' Use Your Illusion I/II, you must know this painting😊
-        </ul>
+            <h3 class="footer-header">What the background pic is?</h3>
+                <ul>
+                    Scuola di Atene(The School of Athens),if you have listened Guns N' Roses' Use Your Illusion I/II, you must know this painting😊
+                </ul>
         </div>
-          <div class="footer-div  col-xs-12 col-lg-3">
-        <h3 class="footer-header">About me</h3>
-        <ul>
-
-
-              I'm currently a university student in computer science. My interest including network programming, backend development,and distributed system.
-            If you are interested in my project, be free to send me a <a href="mailto:dry950526@gmail.com">E-mail</a>, or open an issue on my <a href="https://github.com/JohnDing1995/Selecting-Master-Program-USA">GitHub</a><br>.
-    </ul>
-
-</div>
-
-
-
+        <div class="footer-div  col-xs-12 col-lg-3">
+            <h3 class="footer-header">About me</h3>
+            <ul>I'm currently a university student in computer science. My interest including network programming, backend development,and distributed system.
+                If you are interested in my project, be free to send me a <a href="mailto:dry950526@gmail.com">E-mail</a>, or open an issue on my <a href="https://github.com/JohnDing1995/Selecting-Master-Program-USA">GitHub</a><br>.</ul>
+    </div>
 </footer>
    {# <div style="height: inherit" class="col-xs-12 col-sm-6 col-md-6 col-md-offset-3 col-sm-offset-3 search-result">
 
