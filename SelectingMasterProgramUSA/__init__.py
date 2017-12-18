@@ -1,6 +1,7 @@
-from pymongo import MongoClient
-from pymongo.collation import Collation
+#!/usr/bin/env python
+
 from flask import Flask
+from pymongo import MongoClient
 
 app = Flask(__name__)
 #app.config.from_object('config')

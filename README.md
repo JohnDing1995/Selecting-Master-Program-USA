@@ -18,7 +18,9 @@
 You can see the live preview of this website at
 http://123.206.99.164
 
+![屏幕快照 2017-07-05 下午12.04.16](/Users/dingruiyang/Projects/SelectingMasterProgramUSA/屏幕快照 2017-07-05 下午12.04.16.png)
 
+![屏幕快照 2017-07-05 下午12.10.13](/Users/dingruiyang/Projects/SelectingMasterProgramUSA/屏幕快照 2017-07-05 下午12.10.13.png)
 
 ## Update Log
 
