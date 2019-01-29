@@ -3,3 +3,5 @@
 *.pyc
 *.idea
 *.csv
+.idea/
+.DS_Store
